@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <!--  <input type="button" value="Click" class ="click"> -->
+       
+        Operating systems:<br/>
+                <select name="os" class="menu">
+                    <option value="Windows XP">Windows XP</option>
+                    <option value="Windows 7">Windows 7</option>
+                    <option value="Windows 8">Windows 8</option>
+                    <option value="Windows 9">Windows 9</option>
+                </select><br/><br/>
+                <div> Selected options are:</div>
+        <script>
+              
+             $('.menu').on('change',function()
+            {
+              // var p= $(.menu).val();
+                var p = $(".menu option:selected").text(); 
+                $('div').append('<br/>'+p);
+            });
+        </script>
+    </body>
+</html>

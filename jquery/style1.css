@@ -1,0 +1,59 @@
+.jborder
+{
+    border: 2px solid grey;
+}
+
+#add
+{
+    background-color: grey;
+    color:white;
+}
+
+label, #add
+{
+   margin-left: 15px;
+}
+
+ul {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding: auto;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 150px;
+    background-color: lightgray;
+    border: width border-style color;
+}
+
+
+#del {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 314px;
+    margin-top: 10px;
+    
+}
+
+#card {
+    width: 400px;
+    height: 300px;
+}
+
+h3{
+    font-size: 22px;
+    margin-left: 20px;
+}

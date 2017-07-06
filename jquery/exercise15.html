@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <!--  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    </head>
+    <body>
+        <button type = "submit"> Submit </button>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                console.log("Hello world");
+                $("button").click(function(){
+                    $.get("data.json",function(data)
+                            {
+                                document.write("===== data =====<br/> " + JSON.stringify(data));
+
+                                document.write("<br/>Successful");
+
+                            });
+
+                           
+                    console.log("outside ajax");
+                    });
+                });
+        </script>
+    </body>
+</html>

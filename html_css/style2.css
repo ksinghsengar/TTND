@@ -1,0 +1,87 @@
+body
+{
+    background-color: #1C2833  ;
+}
+
+#container
+{
+    background-color:white ;
+    margin: 0px 90px;
+   
+}
+
+#body
+{
+    margin: 0px 90px;
+    
+}
+
+#header 
+{
+    background-color: #212F3C  ;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    height:70px;
+    padding:0px 90px; 
+}
+
+#menu
+{
+    background-color: #17202A;
+    
+}
+
+#menu a
+{
+    color:white;
+    font-size:14px;
+    padding:8px;
+   
+}
+#main_image img
+{
+    width:960px;
+    height:360px;
+    margin:20px 0px;
+}
+
+#text
+{
+    background-color: #D7DBDD;
+    padding: 20px 0px;
+    margin:10px 0px 20px;
+}
+div#latest_gallery span img
+{
+    width: 215px;
+    height: 315px;
+    margin:20px 12px;
+}
+
+div img
+{
+    background-color: #212F3C  ;
+    height: 360px;
+    line-height: 360px;
+    text-align: center;
+    color:white;
+}
+span img
+{
+    background-color: #212F3C  ;
+    height: 315px;
+    line-height: 315px;
+    text-align: center;
+    color:white;
+}
+#footer
+{
+    
+    background-color: #212F3C  ;
+    color:white;
+    font-weight: light;
+    font-size: 15px;
+    height:30px;
+    padding:10px 90px; 
+}

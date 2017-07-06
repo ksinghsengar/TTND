@@ -1,0 +1,123 @@
+#space
+{
+    height:100px;
+    background-color:#EBF5FB ;
+}
+
+input[type = text],select,input[type=textarea]
+{
+  width:280px;
+  height:30px;
+  align-self: center;
+  border-radius: 3px;
+}
+#heading
+{
+    margin:15px;
+    color:#138D75  ;
+    font-weight: bolder;
+}
+span#right_header
+{
+    float:right;
+    padding:4px;
+}
+
+span#home
+{
+    float:left;
+    padding :2px 4px;
+}
+span#help
+{
+    float:right;
+    padding: 2px 4px;
+}
+
+#menu
+{
+    background-color: #17A589;
+    color:white;
+    width:280px;
+    height:25px;
+
+}
+
+#form_container 
+{
+    width:350px;
+    border-radius: 3px;
+    margin:auto;  
+
+}
+
+#menu, input[type=text],input[type=textarea]
+{
+   width:320px;
+    border-radius: 3px;
+    padding: 10px 10px;  
+}
+#form_container
+{
+    border-style: solid;
+    border-width: 1px;
+    height:auto;
+}
+.form_header, .form_footer
+{
+    height:50px;
+    color:white;
+    padding:0px;
+}
+
+
+spam#bug {
+    font-size: 22px;
+}
+
+.form_header
+{
+    background-color: #D5D8DC ;
+    width:350px;
+
+}
+
+.form_footer
+{
+    background-color: #EAECEE;
+    width:350px;
+}
+
+.form_footer button
+{
+    float: right;
+    margin:10px 5px;
+    background-color: #17A589;
+    color:white;
+}
+#form_field
+{
+    text-align: left;
+}
+
+input[type = radio]
+{
+    height:1.5em;
+    width:100%;
+
+}
+
+
+
+#form_input
+{
+    margin:10px;
+}
+
+span input[type=radio]
+{
+    width:35px;
+    height:20px;
+    padding: 6px;
+    display:inline;
+}

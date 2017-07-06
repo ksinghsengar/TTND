@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div.a").each(function() {
+                    alert(Math.max.apply(Math, $("div.b", this).map(function() {
+                        return $(this).height();
+                    })));
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button>Max Height</button><br/>
+    <div class="a">1.
+        <div class="b">Hi</div>
+        <div class="b">Hello<br/> Hey!
+        </div>
+        <div class="b">World</div>
+        <div class="b"></div>
+    </div><br/>
+    <div class="a">2.
+        <div class="b"></div>
+        <div class="b">Thanks</div>
+    </div><br/>
+    <div class="a">3.
+        <div class="b"></div>
+        <div class="b"></div>
+        <div class="b"></div>
+    </div>
+</body>
+
+</html>

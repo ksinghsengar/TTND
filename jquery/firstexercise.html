@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="..\bootstrap\New folder\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="..\bootstrap\New folder\bootstrap-3.3.7-dist\js\bootstrap.min.js"></script>
+        
+        <title>
+            Bootstrap
+        </title>
+    </head>
+    <body>
+         <div class = "container">
+                <div class = "jumbotron col-md-9 jborder">
+                        <label>Name:*</label>
+                        <input type="text" name="uname" id="name" required>
+                        <label>Email:*</label>
+                        <input type="email" name="email" id="email" required>
+                        <button id="add">ADD</button>
+                </div>    
+                <ul id = "card"></ul>
+
+
+         </div>
+         <script type = "text/javascript">
+                $(function() {
+                    $('#add').click(function() {
+                        var name = $('#name').val();
+                        var email = $('#email').val();
+                        var el = $('<li><h3>' + name + '</h3>\
+                        <h3>' + email + '</h3>\
+                        <button id="del">DELETE</button></li>');
+                        $('#card').append(el);
+                        $('#form').trigger('reset');
+                        $('#card').on('click', '#del', function() {
+                            $(this).parent().remove();
+                        });
+                    });
+                });
+</script>
+    </body>     
+</html>    

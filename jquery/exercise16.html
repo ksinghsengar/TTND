@@ -1,0 +1,79 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+        Title Example
+    </title>
+    
+</head>
+<body>
+    <table class = "boundary">
+        <thead>
+            <th>ID</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td>Manager</td>
+                <td>Information Technology</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td>HR</td>
+                <td>Information Technology</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td>Employee</td>
+                <td>Information Technology</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>D</td>
+                <td>Manager</td>
+                <td>Marketing</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>E</td>
+                <td>HR</td>
+                <td>Marketing</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>F</td>
+                <td>Employee</td>
+                <td>Marketing</td>
+                <td><button>&#x2716; </button></td>
+            </tr>
+        </tbody>
+    </table>
+   
+        <script type="text/javascript">
+            $(document).ready(function() {
+               // console.log("Hello world");
+                $("button").click(function(){
+                      
+                          $(this).parents('tr').first().remove();
+
+                    });
+                           
+                    console.log("outside ajax");
+                });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("li").click(function(event) {
+                event.stopPropagation();
+                var msg = $(this).html();
+                alert( msg + "was clicked");
+            });
+            $("ul").click(function() {
+            
+                alert(" The 'ul' element was clicked");
+                
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <ul>
+        Heading
+        <li>This is first li element.</li>
+        <li>This is second li element.</li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button class = "click">Click</button>
+
+        <script>
+             $('.click').click(function()
+            {
+                  var r= $('<input type="button" value="Click"/>');
+               $("button").after(r); 
+                
+            });
+        </script>
+
+    </body>
+</html>

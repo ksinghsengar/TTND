@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <title>
+            webForm
+        </title>
+    </head>
+
+    <body>
+        <div id = "space"> </div>
+        <div id = heading> TO THE NEW
+           <span id="right_header"> 
+            <span id=home> Home </span>
+            <span id=help>Quick Help</span>
+           </span> 
+        </div>
+        <hr/>
+        <form id = "form_field"> 
+            
+            <div id = "form_container">
+                  <div class = "form_header">
+                 <spam id = "bug">   Bug Report </spam>
+                </div>
+                <div id ="form_input">
+                Title:*<br/>
+                <input type="text" name="title" required><br/><br/>
+                Description:*<br/>
+                <input type="textarea" rows="4" cols = "20" required><br/><br/>
+                Operating systems:<br/>
+                <select name="os" id="menu">
+                    <option value="windows_xp" selected>Windows XP</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br/><br/>
+                Product:<br/>
+                <select name="product" id="menu">
+                    <option value="formoid" selected> Formoid</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br/><br/>
+                Version:*<br/>
+                <input type="text" name= "version"><br/><br/>
+                
+                License:<br/>
+                <span style="float:left;"><input type="radio" name="license" value="free" checked> Free<br></span>
+                <span style="float:right;"><input type="radio" name="license" value="business" > Business<br></span>
+               
+                <br/><br/>
+                        
+                Severity:<br/>
+                <select name="severity" id="menu">
+                    <option value="critical" selected>Critical</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select><br/><br/>
+                Attachments:<br/>
+            <!-- <input type="text" placeholder="No file selected">-->
+                <input type="file"><br/><br/>
+                </div>
+                <div class = "form_footer">
+                    <button type = "submit">Send</button>
+                </div>    
+            </div>
+            
+        </form>
+        <div id = "space"> </div>    
+    </body>
+</html>

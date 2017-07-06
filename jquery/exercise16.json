@@ -1,0 +1,41 @@
+{
+    "employees" : [
+        {
+            "id" : 1,
+            "employeeid": "A",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+        {
+            "id" : 2,
+            "employeeid": "B",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+        {
+            "id" : 3,
+            "employeeid": "C",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+        {
+            "id" : 4,
+            "employeeid": "D",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+        {
+            "id" : 5,
+            "employeeid": "E",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+        {
+            "id" : 6,
+            "employeeid": "F",
+            "designation" :"Employee",
+            "department" :"Information Technology"
+        }
+
+    ]
+}

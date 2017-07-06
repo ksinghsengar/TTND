@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<bean name="triangle" class="main.resource.Triangle">
+        <property name="altitude" value="80"></property>
+        <property name="height" value="50"></property>
+        &lt;!&ndash;<property name="point" ref="point1"></property>&ndash;&gt;
+        <property name="point">
+            <bean name="point1" class="main.resource.Point">
+            <property name="x" value="10"></property>
+            <property name="y" value="10"></property>
+            </bean>
+        </property>
+    </bean>-->
+    <bean name="point1" class="main.resource.Point">
+        <property name="x" value="10"></property>
+        <property name="y" value="10"></property>
+    </bean>
+<!--
+    <bean name="point2" class="main.resource.Point">
+        <property name="x" value="15"></property>
+        <property name="y" value="15"></property>
+    </bean>
+
+    <bean name="point3" class="main.resource.Point">
+        <property name="x" value="20"></property>
+        <property name="y" value="20"></property>
+    </bean>-->
+
+    <!--<bean name="triangle3" class="main.resource.Triangle">
+        <property name="map">
+            <map>
+                <entry key="dgdksh" value-ref="point1"></entry>
+            </map>
+        </property>
+    </bean>-->
+<!--
+    <bean name="triangle" class="main.resource.Triangle">
+        <property name="height" value="30"></property>
+        <property name="altitude" value="40"></property>
+        <property name="list">
+            <list>
+                <ref bean="point1"></ref>
+                <ref bean="point2"></ref>
+                <ref bean="point3"></ref>
+            </list>
+        </property>
+    </bean>
+    <alias name="triangle" alias="triangle2"></alias>-->
+
+
+    <!--<bean name ="triangleC" class="main.resource.Triangle">
+        <constructor-arg value="10" index="1" type="java.lang.Integer"></constructor-arg>
+        <constructor-arg value="5" index="0" ></constructor-arg>
+        <constructor-arg value="Right" type="java.lang.String"></constructor-arg>
+    </bean>-->
+
+    <bean  name="triangle4" class="main.resource.Triangle" autowire="byName" scope="prototype">
+        <property name="height" value="30"></property>
+    </bean>
+    <bean  name="InitDestroy" class="main.resource.InitDestroy" init-method="init" destroy-method="destroy"></bean>
+    <!--<bean class="InitDestroyWithInterface"></bean>-->
+    <!--<bean  name="triangle5" class="main.resource.Triangle" autowire="byType"></bean>-->
+
+   <!-- <bean name="point1" class="main.resource.Point">
+        <property name="x" value="10"></property>
+        <property name="y" value="10"></property>
+
+    </bean>-->
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean>
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+<context:annotation-config></context:annotation-config>
+<context:component-scan base-package="main.resource"/>
+
+</beans>

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        li {
+            float: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="btn">
+            Drinks
+            <ul class="sub-menu" style="display: none;">
+                <li>Fruit juice</li>
+                <li>Tea</li>
+                <li>Coffee</li>
+                <li>Milk</li>
+
+
+            </ul>
+        </li>
+    </ul>
+
+
+    <script>
+        $('.btn').mouseover(function() {
+            $(this).find('.sub-menu').slideDown(200);
+        });
+
+        $('.btn').mouseleave(function() {
+            $(this).find('.sub-menu').slideUp();
+        });
+    </script>
+</body>
+
+</html>
